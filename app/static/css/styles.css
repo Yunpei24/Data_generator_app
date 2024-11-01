@@ -1,0 +1,321 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	font-family: 'Tw Cen MT', sans-serif;
+}
+
+.container {
+	position: relative;
+	height: 60vh;
+	width: 100%;
+	/*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('images/fond_ecran.jpg');*/
+	background-color: #333;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	padding: 0 8%;
+}
+.container1 {
+	position: relative;
+	height: 40vh;
+	width: 100%;
+	/*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('images/fond_ecran.jpg');*/
+	background-color: #b3b4b4fc;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	padding: 0 8%;
+}
+
+
+ul li {
+	margin-right: 10px;
+}
+
+ul li a {
+	position: relative;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 21px;
+}
+
+ul li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	transform: translateX(-50%) translateY(-5px);
+	height: 10px;
+	background: #ffa400;
+	transition: 0.3s;
+}
+
+ul li a:hover::after {
+	width: 38%;
+}
+
+.site-container {
+	position: absolute;
+	bottom: 10%;
+	color: #fff;
+}
+
+.site-container p {
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.site-container h1 {
+	font-size: 120px;
+	line-height: 120px;
+	margin-left: -10px;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	background: url("../images/pattern.png");
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-position: 0 0;
+	animation: animate 20s linear 2s infinite alternate;
+}
+
+@keyframes animate {
+	100% {
+		background-position: -500px 0;
+	}
+}
+
+.site-container h3 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.site-container .row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.row a {
+	display: flex;
+	align-items: center;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	margin-right: 40px;
+	font-size: 30px;
+	transition: 0.3s;
+}
+
+.row a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.row a span {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 2;
+	margin-left: 10px;
+}
+
+.row span {
+	font-size: 18px;
+}
+
+.social-icons {
+	position: absolute;
+	right: 5%;
+	bottom: 8%;
+}
+
+.social-icons a {
+	padding: 5px;
+	margin-right: 4px;
+}
+
+
+/* ################################################################ */
+.description {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.description h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.description p {
+	color: #666;
+	font-size: 16px;
+}
+
+.contact {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.contact h2 {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.contact ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.contact li {
+	margin-bottom: 10px;
+}
+
+.contact a {
+	color: #666;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.contact a:hover {
+	color: #333;
+}
+
+/* Nouveaux styles pour la disposition */
+.description, .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	text-justify: auto;
+}
+
+.description p {
+	font-size: 18px;
+	text-align: justify;
+	color: #000;
+}
+
+.description h2, .contact h2 {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.footer {
+	background-color: #333;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+/* ################################################################ */
+
+nav {
+	background-color: #333;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	width: 100px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav ul li a:hover {
+	color: #ccc;
+}
+
+/* Styles pour le bouton de hamburger sur mobile */
+.menu-toggle {
+	display: none;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Styles pour la version mobile de la navbar */
+@media (max-width: 768px) {
+	nav ul {
+		display: none;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+
+	.menu-toggle.active {
+		color: #ccc;
+	}
+
+	.responsive-nav {
+		display: block;
+		padding: 20px;
+		background-color: #333;
+	}
+
+	.responsive-nav a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .menu li {
+	margin-right: 20px;
+  }
+  
+  .menu li:last-child {
+	margin-right: 0;
+  }
+  
+  .menu a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: bold;
+	transition: color 0.3s ease;
+	font-size: 30px;
+  }
+  
+  .menu a:hover {
+	color: #0af9f9;
+  }
+  

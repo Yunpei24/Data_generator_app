@@ -1,0 +1,8 @@
+python-multipart
+jinja2
+fastapi
+uvicorn
+requests
+faker
+pandas
+pydantic

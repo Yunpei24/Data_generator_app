@@ -1,0 +1,70 @@
+Prénom et nom de famille : fake.first_name() et fake.last_name()
+Prénom et nom de l'entreprise : fake.first_name_male() et fake.last_name_male(), fake.first_name_female() et fake.last_name_female()
+Ville, code postal et pays : fake.city(), fake.postcode(), fake.country()
+Date et heure : fake.date_of_birth(), fake.date_time(), fake.time()
+Texte aléatoire : fake.text(), fake.sentence(), fake.paragraph()
+Numéros de carte de crédit : fake.credit_card_number()
+Couleur : fake.color_name()
+URL : fake.url()
+Numéro de sécurité sociale : fake.ssn()
+Mot de passe : fake.password()
+
+<option value="address">Full Address</option>
+<option value="street_address">Street Address</option>
+<option value="postcode">Postal Code</option>
+<option value="city">City</option>
+<option value="state">State</option>
+<option value="country">Country</option>
+
+<option value="first_name">First Name</option>
+<option value="last_name">Last Name</option>
+<option value="first_name_male">Male First Name</option>
+<option value="first_name_female">Female First Name</option>
+<option value="prefix">Name Prefix</option>
+<option value="suffix">Name Suffix</option>
+<option value="prefix_male">Male Title Prefix</option>
+<option value="prefix_female">Female Title Prefix</option>
+
+<option value="phone_number">Phone Number</option>
+<option value="cellphone_number">Cellphone Number</option>
+<option value="international_phone_number">International Phone Number</option>
+
+<option value="email">Email Address</option>
+<option value="user_name">Username</option>
+<option value="domain_name">Domain Name</option>
+
+<option value="date_of_birth">Date of Birth</option>
+<option value="date_time">Date and Time</option>
+<option value="time">Time</option>
+<option value="year">Year</option>
+<option value="month">Month</option>
+<option value="day_of_month">Day</option>
+<option value="day_of_week">Day of the Week</option>
+
+<option value="sentence">Sentence</option>
+<option value="paragraph">Paragraph</option>
+<option value="text"></option>
+<option value="word">Word</option>
+<option value="words">List of Words</option>
+
+<option value="company">Company Name</option>
+<option value="bs">Business Sector</option>
+<option value="company_logo">Company Logo</option>
+<option value="job">Job</option>
+<option value="user_agent">User Agent</option>
+
+<option value="price">Price</option>
+<option value="amount">Amount</option>
+<option value="currency_code">Currency Code</option>
+<option value="credit_card_number">Credit Card Number</option>
+<option value="bank_account_number">Bank Account Number</option>
+
+<option value="url">URL</option>
+<option value="user_name">Username</option>
+<option value="domain_name">Domain Name</option>
+<option value="ipv4">IPv4 Address</option>
+<option value="ipv6">IPv6 Address</option>
+
+<option value="color_name">Color Name</option>
+<option value="hex_color">Hex Color Code</option>
+<option value="rgb_color">RGB Color</option>

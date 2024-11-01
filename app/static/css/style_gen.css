@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b3b4b4fc;
+}
+
+.haut {
+  max-width: 800px;
+  background-color: #2bd1ef;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle.active {
+    color: #ccc;
+  }
+
+  .responsive-nav {
+    display: block;
+    padding: 20px;
+    background-color: #333;
+  }
+
+  .responsive-nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.row select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: 190px;
+}
+
+.row input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 190px;
+  height: 25px;
+  font-weight: bold;
+}
+
+.row button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.row button:hover {
+  background-color: #d32f2f;
+}
+
+.row > .espa-button {
+  background-color: rgb(173, 212, 245);
+  color: rgb(173, 212, 245);
+}
+
+.row .espa-button:hover {
+  background-color: rgb(173, 212, 245);
+}
+
+#add-button,
+#generate-button,
+#download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1aa91f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-button:hover,
+#generate-button:hover,
+#download-button:hover {
+  background-color: #78f27e;
+}
+
+#add-button:focus,
+#generate-button:focus,
+#download-button:focus {
+  outline: none;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  justify-content: center;
+}
+
+h3 label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+  margin-right: 75px;
+  justify-content: center;
+}
+
+h3 input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 30px;
+}
+
+.menu a:hover {
+  color: #0af9f9;
+}
